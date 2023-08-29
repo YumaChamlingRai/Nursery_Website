@@ -1,0 +1,72 @@
+.flower_section .flower_div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.flower_section .flower_div .flower_img{
+    flex:1 1 30rem ;
+}
+
+.flower_section .flower_div .flower_img img{
+    box-shadow: 20px 20px 50px #4b4f4d;;
+    height: 450px;
+    width: 420px;
+}
+
+.flower_section .flower_div .flower_info{
+    flex:1 1 30rem;
+    margin-left: 150px;
+}
+
+.flower_section .flower_div .flower_info h3{
+    font-size: 30px;
+    color: #4b4f4d;
+}
+
+.flower_section .flower_div .flower_info p{
+    font-size: 17px;
+    word-spacing: 10px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media(max-width:600px){
+
+    .flower_section .flower_div{
+        align-items: center;
+    }
+
+    .flower_section .flower_div .flower_img img{
+        box-shadow: 20px 20px 50px #4b4f4d;;
+        height: 50%;
+        width: 90%;
+    }
+
+    .flower_section .flower_div .flower_info{
+        font-size: 10px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .flower_section .flower_div .flower_info h3{
+        font-size: 15px;
+        color: #4b4f4d;
+        float: left;
+        margin-bottom:  20px;
+    }
+    
+    .flower_section .flower_div .flower_info p{
+        margin-top: 20px;
+        font-size: 17px;
+        word-spacing: 10px;
+        text-align: justify;
+        line-height: 1.8;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}

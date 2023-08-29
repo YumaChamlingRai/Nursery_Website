@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--external link for font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--css file link-->
+    <link rel="stylesheet" href="../Css/mainstyle.css">
+    <link rel="stylesheet" href="../Css/flower.css">
+</head>
+<body>
+    <!--header start-->
+    <header>
+        <div class="logo"><!--creating a div for logo section-->
+            <img src="../Picture/logo.png" width="80%" height="90%"; float: left;>
+        </div>
+        <!--check box for header-->
+        <input type="checkbox" name="" id="check">
+        <label for="check"class="fa fa-bars"></label>
+
+        <!--navigation bar-->
+        <nav class="nav_bar">
+            <a href="./homepage.html">Home&nbsp;</a>
+            <a href="./productpage.html">Product&nbsp;</a>
+            <a href="./aboutuspage.html">About Us&nbsp;</a>
+            <a href="./gallerypage.html">Gallery&nbsp;</a>
+            <a href="./contactpage.html">Contact&nbsp;</a>
+            <a href="./loginpage.html">Login&nbsp;&nbsp;</a>
+            <a href="#" class="fa fa-shopping-cart"></a>
+            <!--div for search bar-->
+        </nav><!--navigation bar end-->
+
+        <!--div for search bar-->
+        <div class="search_div">
+            <input type="search" placeholder="Search for your plants">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </header>
+    <!--header end-->
+    <section class="flower_section">
+        <h1 class="heading1">English Rose</h1>
+            <div class="flower_div">
+                <div class="flower_img">
+                    <img src="../Picture/outdoor4.jpg">
+                </div>
+
+                <div class="flower_info">
+                    <h3>Description</h3>
+                    <p id="flower1_P">
+                        English Rose, also known as David Austin Roses, is a class of hybrid roses that are
+                        known for their old-fashioned, highly fragrant blooms and repeat-flowering habits.
+                        They were created by the English rose breeder David Austin in the 1960s by crossing 
+                        old-fashioned roses with modern hybrid tea roses.English Roses are renowned for their
+                        exquisite beauty and rich, complex fragrance, which is often described as a combination of 
+                        myrrh, vanilla, and fruit. They are available in a range of colors, from soft pastels to rich, 
+                        vibrant hues, and their petals are often ruffled and arranged in a cup-like shape.
+                        <br>
+                        <br>
+                        English Roses have become increasingly popular in recent years, both as garden plants and 
+                            as cut flowers. They are often used in wedding bouquets and floral arrangements due to their
+                             romantic, timeless beauty and heady fragrance. Some popular varieties of English Roses 
+                             include‘Graham Thomas’, ‘Mary Rose’, and ‘Jude the Obscure’.</p>
+                        
+                    <button type="button" onclick="changeParagraph()">PRESS ME</button>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <!--defining the section tag for footer-->
+        <div class="section">
+            <div class="line">
+                <div class="column">
+                    <h5>Services</h5>
+                        <ul>
+                            <li><a href="#">Gardener</a></li>
+                            <li><a href="#">Waterfall</a></li>
+                            <li><a href="#">Carpet Grass</a></li>
+                            <li><a href="#">Rooftop Decoration</a></li>
+                        </ul>
+                </div>
+    
+                <div class="column">
+                    <h5>Training</h5>
+                        <ul>
+                            <li><a href="#">Basic Gardening Training</a></li>
+                        </ul>
+                </div>
+    
+                <div class="column">
+                    <h5>Link</h5>
+                        <ul>
+                            <li><a href="./homepage.html">Home</a></li>
+                            <li><a href="./productpage.html">Product</a></li>
+                            <li><a href="./aboutus.html">About Us</a></li>
+                            <li><a href="./gallery.html">Gallery</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                </div>
+    
+                <div class="column">
+                    <h5>Get In Touch</h5>
+                        <div class="media">
+                            <a href="https://www.facebook.com/profile.php?id=100091614616361"><i class="fa fa-facebook-f"> Facebook</i></a>
+                            <br>
+                            <a href="https://www.instagram.com/__devvv_0/"><i class="fa fa-instagram"> Instagram</i></a>
+                        </div>
+                </div>
+    
+                <div class="column">
+                    <h5>Address</h5>
+                        <ul>
+                        <p>Budhanilaknta</p>
+                    <h5>Email</h5>
+                        <p>Dm561409@gmail.com</p>
+                    <h5>Contact Number</h5>
+                        <p>01-232323232, 01-2499283</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <!--br break tag-->
+            <br>
+            <br>
+            <hr>
+        <center>&copy; 2022, Unique Nursery, Kathmandu Nepal,All Right Reserved</center>
+    </footer>
+    <script>
+        function changeParagraph(){
+            var element = document.getElementById("flower1_P");
+            element.innerHTML = "! ! !   THANKYOU DO VISIT AGAIN   ! ! !";
+        }
+    </script>
+    </body>
+    </html>

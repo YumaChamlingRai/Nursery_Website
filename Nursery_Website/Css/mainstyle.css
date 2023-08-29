@@ -1,0 +1,404 @@
+*{
+    margin:2px 2px 2px 2px;
+    padding: 1px 1px 1px 1px;
+    outline: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition:.4s ease-in-out;
+  }
+
+* {box-sizing: border-box;}
+
+
+.heading1{
+  text-align: left;
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+  
+
+}
+
+header{
+  margin:0;
+  background-image:linear-gradient(to right, #ffffff 9%, #cac33f 156%);
+  width:100%;
+  height:90px ;
+  display:flex;
+  padding:20px 20px;
+  align-items: center;
+  justify-content: space-between;
+  z-index:9999;
+  top:0;
+  left: 0;
+  right:0; 
+}
+html{
+        font-size: 70%;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        scroll-padding-top:96px ;
+   }
+
+
+
+header .logo{
+                width: 17%; 
+                height: 110x; 
+                margin: 10px; 
+                padding-top: 10px;
+            }
+
+
+header .nav_bar a{
+                    font-size: 20px;
+                    color: rgb(55, 52, 52);
+                    font-weight: bold;
+                    padding: 0 20px;
+                }
+
+header .nav_bar a:hover{
+                    color: #cbb829;
+                    font-size: 23px;
+                    font-weight: 500;
+                }               
+
+header .search_div input[type=search]{
+    margin-top: 8px;
+    font-size: 15px;
+    border: none;
+    height: 40px;
+    width: 250px;
+    margin-left: 1.5rem;
+}
+
+header .search_div button{
+    margin-top: 8px;
+    height: 40px;
+    width: 60px;
+    background:none;
+    font-size:15px;
+    cursor: pointer;
+    margin-right: 30px;
+    border: none;
+    background-color: white;
+}
+
+header .search_div button:hover{
+    background-color: rgb(154, 162, 159);
+}
+
+header #check{ 
+display: none;
+}
+
+header .fa-bars{
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(55, 52, 52);
+    display: none;
+}
+
+section{
+    padding: 10px 10%;
+}
+.hire{
+    padding: 10px 10%;
+    display: flex;
+    width: 100%;
+}
+.hire .container_btn {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    display: flex;
+    padding: 10px;
+  }
+.hire  .container_btn img{
+    width: 100%;
+    height: 300px;
+  }
+  
+.hire  .container_btn .btn {
+    position: absolute;
+    top: 70%;
+    right: 40%;
+    background-color: white;
+    color: rgb(102, 98, 98);
+    font-size: 17px;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .hire .container_btn .btn:hover {
+    background-color: rgb(157, 216, 48);
+  }
+
+
+  footer ul{
+    list-style: none;
+  }
+.section{
+  max-width: 1200;
+  margin: auto;
+}
+.line{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer{
+   background-image: linear-gradient(to right, #ffffff 9%, #cac33f 156%);
+  padding: 22px 0;
+}
+
+.column{
+  width:15%;
+  padding: 0 10px;
+  color: rgb(149, 60, 60);
+
+}
+
+.column h5{
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.column ul li a{
+  font-size: 15px;
+  color: rgb(70, 64, 64);
+  text-decoration:none;
+  display: block;
+  padding-top: 5px;
+  margin-left: 20px;
+}
+
+.column ul li a:hover{
+  color: #d29417;
+  padding-left: 12px;
+  font-size:16px;
+}
+
+.column .media a{
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+.column .media a:hover{
+  color: #d29417;
+}
+
+.column ul p{
+  font-size: 15px;
+  color: black;
+  text-decoration:none;
+  display: block;
+  padding-top: 5px;
+  margin-left: 20px;
+}
+
+
+
+/*media query*/
+
+/*responsive*/
+/* for footer for phone*/
+@media (max-width: 600px){
+    .column{
+      width: 25%;
+      padding: 0 20px;
+    }
+  }
+    
+  @media (max-width: 600px){
+    .column{
+      width: 100%;
+    }
+  }
+  
+@media(max-width:995px){
+    html{
+        font-size :50%;
+        }
+
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+/*responsive*/
+/* for header and navigation bar for phone*/
+@media(max-width:600px){
+
+    header .logo{
+        display: flex;
+        width: 50%;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .nav_bar{
+        position:absolute ;
+        top:150px;
+        left: -100%;
+        width: 100%;
+        background-color: #a7a378;  
+        text-align: center;
+    }
+
+    header #check:checked ~ .nav_bar{
+        left: 0;
+
+    }
+    header .nav_bar a{
+        margin: 20px;
+        padding: 10px;
+        display: block;
+    }
+
+    header .search_div{
+        position:absolute ;
+        top:100px;
+        width: 100%;
+        left: -100%;
+        background-color: #a7a378;
+        text-align: center;
+        display: flex;
+    }
+
+    header #check:checked ~ .search_div{
+        left: 10px;
+
+    }
+
+  }
+
+  
+  @media(max-width:600px){
+
+    .hire .container_btn{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        padding-bottom: 10rem;
+        position: relative;
+       
+    }
+
+    .hire .container_btn img{
+      width: 95%;
+      text-align: center;
+    }
+
+    .hire .container_btn .btn{
+      position: absolute;
+        width: 50%;
+        font-size: 13px;    
+        top: 70%;
+        left: 20%;  
+    }
+
+    .hire .container_btn .btn a{
+      font-size: 10px;
+    }
+
+  
+}
+
+/*for larger screens*/
+
+@media only screen and (max-width: 1200px){
+  .column{
+    width: 25%;
+    padding: 0 20px;
+  }
+
+  .column{
+    width: 100%;
+  }
+
+  header .logo{
+    display: flex;
+    width: 40%;
+    height: 90px;
+}
+
+header .fa-bars{
+    display: block;
+}
+
+header .nav_bar{
+    position:absolute ;
+    top:150px;
+    left: -100%;
+    width: 100%;
+    background-color: #a7a378;  
+    text-align: center;
+}
+
+header #check:checked ~ .nav_bar{
+    left: 0;
+
+}
+header .nav_bar a{
+    margin: 10px;
+    padding: 5px;
+    display: block;
+}
+
+header .search_div{
+    position:absolute ;
+    top:100px;
+    width: 100%;
+    left: -100%;
+    background-color: #a7a378;
+    text-align: center;
+    display: flex;
+}
+
+header #check:checked ~ .search_div{
+    left: 0;
+
+}
+.hire .container_btn{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-bottom: 10rem;
+  position: relative;
+ 
+}
+
+.hire .container_btn img{
+width: 95%;
+text-align: center;
+}
+
+.hire .container_btn .btn{
+position: absolute;
+  width: 50%;
+  font-size: 13px;    
+  top: 70%;
+  left: 20%;  
+}
+
+.hire .container_btn .btn a{
+font-size: 10px;
+}
+
+}
+

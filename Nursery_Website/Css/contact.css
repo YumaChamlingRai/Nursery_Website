@@ -1,0 +1,60 @@
+.contact_section .contact_div{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem ;
+}
+
+.contact_section .contact_div form{
+    flex: 1 1 40rem;
+    flex-direction: column;
+}
+
+.contact_section .contact_div .photo{
+    flex: 1 1 40rem;
+}
+
+.contact_section .contact_div .photo img{
+    width: 100%;
+}
+
+.contact_section .contact_div form .textfield{
+    padding: 1rem;
+    font-size:1.7em; 
+    margin: 10px 0;
+    text-transform: none;
+    border: solid 1px;
+    width: 90%;
+
+}
+
+.contact_section .contact_div form .textfield:focus{
+    color: rgb(18, 18, 17);
+    background-color: rgb(141, 145, 138);
+}
+
+.contact_section .contact_div form textarea{
+    resize: none;
+    
+}
+
+.contact_section .contact_div form .btn{
+    background-color: rgb(192, 187, 113);
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact_section .contact_div form .btn:hover{
+    background-color: rgb(197, 138, 48);
+}
+
+
+@media (max-width: 600px){
+
+    .location img{
+        height: 50%;
+        width: 100%;
+    }
+}
